@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<!-- styles -->
+<!-- body -->
+<div class="body">
+    {% block content %}
+<h2>News App</h2>
+    <div class="trending">
+        <div class="alltrends">
+            <h3> Tending News</h3>
+            <ul>
+                {{ macro.display_news(trending) }}
+            </ul>
+        </div>
+        <div class="recomended">
+            <h3> Must Read</h3>
+             {{ macro.display_news(love) }}
+        </div>
+    </div>
+    <!-- iiiiiiiii my-->
+    <!-- jjjjjj -->
+{% endblock%}
+</div>
