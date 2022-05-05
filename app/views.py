@@ -10,7 +10,7 @@ def index():
     '''
 
     # Getting popular news
-    # trending_news = get_news('trending')
+    trending_news = get_news('trending')
     love_news = get_news('love')
     # print(trending_news)
     title = 'Home - Welcome to The best News Review Website Online'
@@ -39,7 +39,7 @@ def politics():
     political_news = get_news('politics')
     title = "Politics - Politics news"
     # print(trending_news)
-    # title = 'Home - Welcome to The best Movie Review Website Online'
+    title = 'Home - Welcome to The best Movie Review Website Online'
     return render_template('politics.html', title = title,politics=political_news)
 # if
 
