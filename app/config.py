@@ -10,4 +10,4 @@ class ProdConfig(Config):
 
 class DevConfig(Config):
 
-    DEBUG = 
+    DEBUG = True
