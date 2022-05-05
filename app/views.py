@@ -9,8 +9,8 @@ def index():
     View root page function that returns the index page and its data
     '''
 
-    # Getting popular movie
-    trending_news = get_news('trending')
+    # Getting popular news
+    # trending_news = get_news('trending')
     love_news = get_news('love')
     # print(trending_news)
     title = 'Home - Welcome to The best News Review Website Online'
@@ -52,5 +52,5 @@ def technology():
     technology_news = get_news('technology')
     title = "Politics - Politics news"
     # print(trending_news)
-    title = 'TechNews - Technology news'
-    return render_template('technology.html', title = title,technology=technology_news)
+    # title = 'TechNews - Technology news'
+    return render_template('technology.html', title = title,technology=Technology_news)
