@@ -52,5 +52,5 @@ def technology():
     technology_news = get_news('technology')
     title = "Politics - Politics news"
     # print(trending_news)
-    # title = 'TechNews - Technology news'
+    title = 'TechNews - Technology news'
     return render_template('technology.html', title = title,technology=technology_news)
